@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    margin: 30px;
+    margin: 30px 100px;
    
     background: linear-gradient(90deg, rgb(72, 76, 80), rgb(180, 190, 190));
 }
@@ -82,7 +82,6 @@ body {
 .contact {
     background: rgb(219, 223, 226);
     padding: 0 30px;
-    margin-right: 5px;
     width: 40%;
 }
 
@@ -161,7 +160,12 @@ ol, ul {
 }
 
 
-@media only screen and (max-width: 750px) {
+@media (max-width: 850px) {
+
+    body {
+        margin: 30px;
+    }
+
     .info {
         display: flex;
         flex-direction: column;
@@ -174,6 +178,11 @@ ol, ul {
 
 
 @media (max-width: 550px) {
+
+    body {
+        margin: 0;
+    }
+
     .profile {
         display: flex;
         flex-direction: column;
