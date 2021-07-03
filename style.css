@@ -86,6 +86,7 @@ body {
 }
 
 .contact__inner {
+    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
