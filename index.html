@@ -19,7 +19,7 @@
     <!-- container -->
     <div class="container">
 
-        <header class="header"> Resume </header>
+        <header class="header"> CV </header>
 
         <div class="profile">
             <div class="name">
@@ -48,14 +48,14 @@
                 <h2>Contact</h2>
                 <div class="contact__inner">
                     <div class="contact__item">
-                        <img src="img/icons/whatsapp.svg" width="30" height="30" alt="whatsapp">
-                        <img src="img/icons/telegram.svg" width="30" height="30" alt="telegram">
+                        <img class="image_contact" src="img/icons/whatsapp.svg" alt="whatsapp">
+                        <img class="image_contact" src="img/icons/telegram.svg" alt="telegram">
                         <div class=item>
                             <a class="contact__link" href="tel:+79827911160">+7 (982) 791 11 60 </a>
                         </div>
                     </div>
                     <div class="contact__item">
-                        <img src="img/icons/mail.svg" width="35" height="35" alt="mail">
+                        <img class="image_mail" src="img/icons/mail.svg" alt="mail">
                         <div class=item>
                             <a class="contact__link" href="mailto:platon.sarapul@gmail.com">platon.sarapul@gmail.com</a>
                         </div>
@@ -71,9 +71,17 @@
                 </ul>
 
                 <h2>Code example</h2>
-                <div class="skill__item">
-                    <img src="img/icons/github.svg" width="50" height="50" alt="github">
-                    <a class="contact__link" href="https://github.com/sk8-pl">https://github.com/sk8-pl</a>
+                <div class="code_example">
+                    <pre><code>
+    function inOrderTraverse(tree) {
+      if (tree != null || tree != undefined) {
+          inOrderTraverse(tree.left);
+          arr.push(tree.value);
+          inOrderTraverse(tree.right);
+          }
+      }
+                    </code></pre>
+                
                 </div>
 
             </section>
@@ -83,70 +91,78 @@
                 <ul class="skills__inner">
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/html5.svg" width="40" height="40" alt="html5">
+                            <img class="image_mail" src="img/icons/html5.svg" width="40" height="40" alt="html5">
                             <div class=item>HTML</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/css3.svg" width="40" height="40" alt="css3">
+                            <img class="image_mail" src="img/icons/css3.svg" width="40" height="40" alt="css3">
                             <div class=item>CSS</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/sass.svg" width="40" height="40" alt="SASS">
+                            <img class="image_mail" src="img/icons/sass.svg" width="40" height="40" alt="SASS">
                             <div class=item>SASS</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/responsive.svg" width="40" height="40" alt="responsive and adaptive">
+                            <img class="image_mail" src="img/icons/responsive.svg" width="40" height="40" alt="responsive and adaptive">
                             <div class=item>Adaptive and responsive layout</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/js.svg" width="40" height="40" alt="JavaScript">
+                            <img class="image_mail" src="img/icons/js.svg" width="40" height="40" alt="JavaScript">
                             <div class=item>JavaScript</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/OOP.svg" width="40" height="40" alt="OOP">
+                            <img class="image_mail" src="img/icons/OOP.svg" width="40" height="40" alt="OOP">
                             <div class=item>Оbject-oriented programming</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/git.svg" width="50" height="50" alt="git">
+                            <img class="image_mail" src="img/icons/git.svg" width="50" height="50" alt="git">
                             <div class=item>git</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/gulp.svg" width="40" height="40" alt="Gulp">
+                            <img class="image_mail" src="img/icons/webpack.svg" width="50" height="50" alt="git">
+                            <div class=item>webpack</div>
+                        </div>
+                    </li>
+
+
+                    <li>
+                        <div class="skill__item">
+                            <img class="image_mail" src="img/icons/gulp.svg" width="40" height="40" alt="Gulp">
                             <div class=item>Gulp</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/figma.svg" width="40" height="40" alt="Figma">
+                            <img class="image_mail" src="img/icons/figma.svg" width="40" height="40" alt="Figma">
                             <div class=item>Figma</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/PS.svg" width="40" height="40" alt="PhotoShop">
+                            <img class="image_mail" src="img/icons/PS.svg" width="40" height="40" alt="PhotoShop">
                             <div class=item>PhotoShop</div>
                         </div>
                     </li>
@@ -157,28 +173,28 @@
                 <ul class="skills__inner">
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/flexibility.svg" width="40" height="40" alt="flexibility">
+                            <img class="image_mail" src="img/icons/flexibility.svg" width="40" height="40" alt="flexibility">
                             <div class=item>Flexibility</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/self-study.svg" width="40" height="40" alt="self-study">
+                            <img class="image_mail" src="img/icons/self-study.svg" width="40" height="40" alt="self-study">
                             <div class=item>Self-study</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/time-managment.svg" width="40" height="40" alt="time-managment">
+                            <img class="image_mail" src="img/icons/time-managment.svg" width="40" height="40" alt="time-managment">
                             <div class=item>Time-managment</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img src="img/icons/english.svg" width="40" height="40" alt="English lvl">
+                            <img class="image_mail" src="img/icons/english.svg" width="40" height="40" alt="English lvl">
                             <div class=item>English level A2</div>
                         </div>
                     </li>
