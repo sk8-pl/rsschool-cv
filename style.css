@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    margin: 30px 100px;
+    margin: 30px;
    
     background: linear-gradient(90deg, rgb(72, 76, 80), rgb(180, 190, 190));
 }
@@ -82,14 +82,36 @@ body {
 .contact {
     background: rgb(219, 223, 226);
     padding: 0 30px;
+    margin-right: 5px;
     width: 40%;
 }
 
 .contact__inner {
-    padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 50px;
+}
+
+.image_contact {
+    width: 30px;
+    height: 30px;
+    transition: all .3s;
+}
+
+.image_contact:hover {
+    width: 35px;
+    height: 35px;
+}
+
+.image_mail  {
+    width: 40px;
+    height: 40px;
+    transition: all .3s;
+}
+
+.image_mail:hover {
+    width: 45px;
+    height: 45px;
 }
 
 .contact__item {
@@ -160,13 +182,11 @@ ol, ul {
     font-size: 12px;
 }
 
+.code_example {
+    font-size: 14px;
+}
 
-@media (max-width: 850px) {
-
-    body {
-        margin: 30px;
-    }
-
+@media only screen and (max-width: 750px) {
     .info {
         display: flex;
         flex-direction: column;
@@ -179,11 +199,6 @@ ol, ul {
 
 
 @media (max-width: 550px) {
-
-    body {
-        margin: 0;
-    }
-
     .profile {
         display: flex;
         flex-direction: column;
@@ -193,3 +208,4 @@ ol, ul {
         margin: 30px 0 0 120px;
     }
 }
+
