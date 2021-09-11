@@ -9,6 +9,7 @@
     <meta name="google" content="notranslate" />
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="rainbow.css" rel="stylesheet" type="text/css">
 
     <title>CV Platon Chuhlancev</title>
 
@@ -19,7 +20,35 @@
     <!-- container -->
     <div class="container">
 
-        <header class="header"> CV </header>
+        <header class="header">
+            <h3>CV</h3>
+            <nav class="navigation">
+                <a href="#contact">Contact</a>
+                <a href="#education">Education</a>
+                <a href="#code_example">Code example</a>
+                <a href="#hard_skills">Hard skills</a>
+                <a href="#soft_skills">Soft skills</a>
+                <a href="#projects">My projects</a>
+                <a href="#introduction">Self-introdaction</a>
+            </nav>
+        </header>
+
+        <header class="header_burger">
+            <span class="burger__span"></span>
+        </header>
+
+        <header class="header_burger-close">
+        </header>
+
+        <aside class="sub_nav">
+            <a class="sub_nav-item" href="#contact">Contact</a>
+            <a class="sub_nav-item" href="#education">Education</a>
+            <a class="sub_nav-item" href="#code_example">Code example</a>
+            <a class="sub_nav-item" href="#hard_skills">Hard skills</a>
+            <a class="sub_nav-item" href="#soft_skills">Soft skills</a>
+            <a class="sub_nav-item" href="#projects">My projects</a>
+            <a class="sub_nav-item" href="#introduction">Self-introdaction</a>
+        </aside>
 
         <div class="profile">
             <div class="name">
@@ -45,24 +74,31 @@
             <section class="contact">
                 <!-- CONTACT -->
 
-                <h2>Contact</h2>
+                <h2 id="contact">Contact</h2>
                 <div class="contact__inner">
-                    <div class="contact__item">
-                        <img class="image_contact" src="img/icons/whatsapp.svg" alt="whatsapp">
-                        <img class="image_contact" src="img/icons/telegram.svg" alt="telegram">
-                        <div class=item>
-                            <a class="contact__link" href="tel:+79827911160">+7 (982) 791 11 60 </a>
-                        </div>
-                    </div>
-                    <div class="contact__item">
-                        <img class="image_mail" src="img/icons/mail.svg" alt="mail">
-                        <div class=item>
-                            <a class="contact__link" href="mailto:platon.sarapul@gmail.com">platon.sarapul@gmail.com</a>
-                        </div>
-                    </div>
+                    <ul>
+                        <li>
+                            <div class="contact__item">
+                                <img class="image_contact" src="img/icons/whatsapp.svg" alt="whatsapp">
+                                <img class="image_contact" src="img/icons/telegram.svg" alt="telegram">
+                                <div class=item>
+                                    <a class="contact__link" href="tel:+79827911160">+7 (982) 791 11 60 </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contact__item">
+                                <img class="image_mail" src="img/icons/mail.svg" alt="mail">
+                                <div class=item>
+                                    <a class="contact__link"
+                                        href="mailto:platon.sarapul@gmail.com">platon.sarapul@gmail.com</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <h2>Education</h2>
+                <h2 id="education">Education</h2>
                 <ul>
                     <li class="education__item">RS School | JS/SE 2021Q3 (september 2021 — ###### 202#)</li>
                     <li class="education__item">Sarapul Polytechnic Institute (branch) of the Federal State Budgetary
@@ -70,9 +106,9 @@
                         named after M. T. Kalashnikov” (2018-2022)</li>
                 </ul>
 
-                <h2>Code example</h2>
+                <h2 id="code_example">Code example</h2>
                 <div class="code_example">
-                    <pre><code>
+                    <pre><code data-language="javascript">
     function inOrderTraverse(tree) {
       if (tree != null || tree != undefined) {
           inOrderTraverse(tree.left);
@@ -81,13 +117,13 @@
           }
       }
                     </code></pre>
-                
+
                 </div>
 
             </section>
 
             <section class="skills">
-                <h2>Hard skills</h2> <!-- HARD SKILLS -->
+                <h2 id="hard_skills">Hard skills</h2> <!-- HARD SKILLS -->
                 <ul class="skills__inner">
                     <li>
                         <div class="skill__item">
@@ -112,7 +148,8 @@
 
                     <li>
                         <div class="skill__item">
-                            <img class="image_mail" src="img/icons/responsive.svg" width="40" height="40" alt="responsive and adaptive">
+                            <img class="image_mail" src="img/icons/responsive.svg" width="40" height="40"
+                                alt="responsive and adaptive">
                             <div class=item>Adaptive and responsive layout</div>
                         </div>
                     </li>
@@ -169,40 +206,71 @@
 
                 </ul>
 
-                <h2>Soft skills</h2> <!-- SOFT SKILLS -->
+                <h2 id="soft_skills">Soft skills</h2> <!-- SOFT SKILLS -->
                 <ul class="skills__inner">
                     <li>
                         <div class="skill__item">
-                            <img class="image_mail" src="img/icons/flexibility.svg" width="40" height="40" alt="flexibility">
+                            <img class="image_mail" src="img/icons/flexibility.svg" width="40" height="40"
+                                alt="flexibility">
                             <div class=item>Flexibility</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img class="image_mail" src="img/icons/self-study.svg" width="40" height="40" alt="self-study">
+                            <img class="image_mail" src="img/icons/self-study.svg" width="40" height="40"
+                                alt="self-study">
                             <div class=item>Self-study</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img class="image_mail" src="img/icons/time-managment.svg" width="40" height="40" alt="time-managment">
+                            <img class="image_mail" src="img/icons/time-managment.svg" width="40" height="40"
+                                alt="time-managment">
                             <div class=item>Time-managment</div>
                         </div>
                     </li>
 
                     <li>
                         <div class="skill__item">
-                            <img class="image_mail" src="img/icons/english.svg" width="40" height="40" alt="English lvl">
+                            <img class="image_mail" src="img/icons/english.svg" width="40" height="40"
+                                alt="English lvl">
                             <div class=item>English level A2</div>
                         </div>
                     </li>
                 </ul>
 
+                <h2>My projects</h2>
+
+                <div class="projects" id="projects">
+                    <a href="https://rolling-scopes-school.github.io/sk8-pl-JSFEPRESCHOOL/museum/" target="_blank">
+                        <h4>Museum</h4>
+                        <img src="img/museum.jpg" alt="museum">
+                    </a>
+                    <a href="https://rolling-scopes-school.github.io/sk8-pl-JSFEPRESCHOOL/vertical-slider/"
+                        target="_blank">
+                        <h4>Slider</h4>
+                        <img src="img/slider.jpg" alt="slider">
+                    </a>
+                    <a href="https://rolling-scopes-school.github.io/sk8-pl-JSFEPRESCHOOL/whack-a-mole/"
+                        target="_blank">
+                        <h4>Game</h4>
+                        <img src="img/game.jpg" alt="game">
+                    </a>
+                </div>
+
             </section> <!-- /skills -->
 
+
+
         </main> <!-- /information -->
+
+        <div class="self_introduction" id="introduction">
+            <iframe src="https://www.youtube.com/embed/DlZXAHimr0w" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
 
 
 
@@ -221,6 +289,8 @@
 
     </div> <!-- /container/ -->
 
+    <script src="rainbow-custom.min.js"></script>
+    <script src="menu.js"></script>
 </body>
 
 </html>
